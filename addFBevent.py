@@ -54,6 +54,6 @@ for comments in soup.findAll(text=lambda text:isinstance(text,Comment)):
 #print(location)
 #print(date_ + " " + time)
 #print(duration)	
-my_command = 'gcalcli --calendar \''+" ".join(calendar)+'\' add --title \''+title+'\' --where \''+location+'\' --when \''+str(date_time_obj1)+'\' --duration \''+str(duration)+'\''
+my_command = 'gcalcli --calendar \''+" ".join(calendar)+'\' add --title \''+title+'\' --where \''+location+'\' --when \''+str(date_time_obj1)+'\' --description \''+url+'\' --duration \''+str(duration)+'\''
 print(my_command)
 os.system(my_command)
